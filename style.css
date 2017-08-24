@@ -1,5 +1,5 @@
 body {
-  margin-top: 70px;
+  margin-top: 30px;
   background: #333;
   color: #fff;
   align-items: center;
@@ -9,3 +9,9 @@ body {
 .card {
  margin-top: 10px;
 }
+
+#resetBTN {
+  margin: 20px;
+}
+
+/* Add media query so it viewable in mobile devices*/

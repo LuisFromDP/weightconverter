@@ -9,56 +9,63 @@
   <title>Weight Converter</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 offset-md-3">
+      <div class="col-12 col-sm-6 offset-sm-6 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
         <h1 class="display-4 text-center mb-3">Weight Converter</h1>
-        <form id='mainForm'>
-          <div class="row">
-              <div class="col-5">
-                <div class="form-group">
-                  <input id="weightInput" type="number"  class="form-control" class="form-control-lg" placeholder="Enter Pounds...">
-                </div>
-              </form>
+            <div class="row">
+              <div class="col-sm-3">
+                <form id='mainForm'>
+                    <div class="form-group">
+                      <input id="weightInput" type="number"  class="form-control" class="form-control-lg" placeholder="Enter Weight...">
+                    </div>
+                </form>
               </div>
-              <div class="col-3">
-                <select class="form-control" id="firstOption">
+              <div class="col-sm-4">
+                  <select class="form-control" id="firstOption">
+                    <option selected>Select</option>
                     <option>Pounds</option>
                     <option>Grams</option>
                     <option>Tons</option>
-                </select>
+                  </select>
               </div>
-              <div class="col-1">-</div>
-              <div class="col-3">
-                <select class="form-control" id="secondOption">
-                    <option>Pounds</option>
-                    <option>Grams</option>
-                    <option>Tons</option>
-                </select>
-              </div>
-          </div>
-        <div id="output" class="row">
-          <div class="col-sm-6">
-              <div class="card">
-                <div class="card-block card-primary">
-                  <h3 id="weightName" class="card-title">Pounds:</h3>
-                  <p id="weightOutput" class="card-text"></p>
-                </div>
+              <div class="col-sm-1">-</div>
+              <div class="col-sm-4">
+                  <select class="form-control" id="secondOption">
+                      <option selected>Select</option>
+                      <option>Pounds</option>
+                      <option>Grams</option>
+                      <option>Tons</option>
+                  </select>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-block card-danger">
-                  <h3 id="convertedWeightName" class="card-title">Grams:</h3>
-                  <p id="finalOutput" class="card-text"></p>
+            <!-- WHere the cards row is-->
+            <div id="output" class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-block card-primary">
+                        <h3 id="weightName" class="card-title"></h3>
+                        <p id="weightOutput" class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-block card-danger">
+                        <h3 id="convertedWeightName" class="card-title"></h3>
+                        <p id="finalOutput" class="card-text"></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <button id="resetBTN" type="button" class="btn btn-outline-warning">Reset</button>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
   <script src="/script.js" charset="utf-8"></script>
 </body>
 </html>
