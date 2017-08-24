@@ -1,0 +1,11 @@
+body {
+  margin-top: 70px;
+  background: #333;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+ margin-top: 10px;
+}
