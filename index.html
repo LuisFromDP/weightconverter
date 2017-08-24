@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <title>Weight Converter</title>
   <style>
@@ -18,8 +19,6 @@
    .card {
      margin-top: 10px;
    }
-
-
   </style>
 </head>
 <body>
@@ -73,46 +72,6 @@
       </div>
     </div>
   </div>
-  <script>
-     reset();//Resets Everything
-     var weight, firstOption, secondOption;
-
-    //Gets the weight input and places the value of it in the blue box
-    document.getElementById('weightInput').addEventListener('input', getWeightInput);
-    function getWeightInput (e){
-      document.getElementById('output').style.visibility = 'visible';
-     weight = e.target.value;//Gets input Value
-     document.getElementById('weightOutput').innerHTML = weight;//placing the value to the DOM
-     weightConverter();
-    }
-
-//Gets weight option
-  document.getElementById('firstOption').addEventListener('change', getFirstOption);
-  // Changes and Grabs placeholder value for weight type
-    function getFirstOption(e){
-     firstOption = e.target.value; //Gets placeholder value
-       document.getElementById('weightInput').placeholder = 'Enter ' +firstOption+ '...';
-       document.getElementById('weightName').innerHTML = firstOption + ":";
-       weightConverter();
-    }
-
-  document.getElementById('secondOption').addEventListener('change', getSecondOption);
-    function getSecondOption (e){
-      secondOption = e.target.value;
-        document.getElementById('convertedWeightName').innerHTML = secondOption+ ":";
-        weightConverter();
-    }
-
-  //Convert weights
-  function weightConverter (){
-    document.getElementById('finalOutput').innerHTML = weight*5;
-  }
-
-  //Clears out all values and reset DOM
-    function reset(){
-      document.getElementById('mainForm').reset();
-      document.getElementById('output').style.visibility = 'hidden';
-    }
-  </script>
+  <script src="/script.js" charset="utf-8"></script>
 </body>
 </html>
