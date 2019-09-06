@@ -1,3 +1,3 @@
 # weightconverter
 
-[Live Demo](https://github.com/lmanzanero/weightconverter)
+[Live Demo](https://lmanzanero.github.io/javascript-weight-converter/)
